@@ -28,8 +28,33 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
+Declaring a variable before assigning a value to it.  Allowing you to declare before using.
+
+simple example using the variable "name"
+
+var name;
+var firstName = "Jon ";
+var lastName= "Huffaker";
+name = (firstName + lastName);
+
   **Student answer: **
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
+
+Declaring something in a variable that will need to returned at a later date.  Prevents you from repeating yourself
+
+example
+
+
+  function myTeach (firstName, lastName, myCallback) {
+    return myCallback (firstName, lastName);
+  }
+
+  function extraPoint(firstName, lastName) {
+    return (firstName + lastName + " is my favorite teacher!");
+  }
+
+  console.log(myTeach("Steve", "Brownlee", extraPoint));
+
 
   **Student answer: **
 
@@ -93,4 +118,4 @@ function greg(answer) {
 
 steve();
 ```
-
+42 because that is what has been declared in the global scope
