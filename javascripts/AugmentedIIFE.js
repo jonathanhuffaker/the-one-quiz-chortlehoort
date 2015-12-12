@@ -15,7 +15,7 @@ var FruitMaker = function() {
 
 		}
 	}
-}(FruitMaker)
+}(FruitMaker);
 
 console.log(FruitMaker);
 

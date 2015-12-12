@@ -84,18 +84,43 @@ example
 ## XHR
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
+
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
+
+ANSWER:  Put, Get, Delete, Post
+
   **Student answer:**
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
+
+To organize your javascript files and to execute in whatever order.  Avoid the deepest darkest places of callback hell.
   **Student answer:**
 
 1. Provide a simple example of the syntax for handling a Promise.
+
+ANSWER
+example (I think this is what you are looking for)
+  
+  firstXHR()
+    .then(function(data1) {
+      return secondXHR (data1);
+      })
+      .then(function(data2) {
+        return thirdXHR(data2);
+        })
+        .done();
+
+
+
+
   **Student answer:**
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
+
+ANSWER:  42 because that is what has been declared in the global scope
+
 
 **Student answer: **
 
@@ -118,4 +143,4 @@ function greg(answer) {
 
 steve();
 ```
-42 because that is what has been declared in the global scope
+

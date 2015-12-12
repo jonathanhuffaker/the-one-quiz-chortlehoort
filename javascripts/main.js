@@ -73,3 +73,22 @@ function longPlanets() {
 }
 
 // console.log(longPlanets(Planets));
+
+
+
+
+// Write a function named getAnimals that uses the jQuery ajax method to retrieve the data/animals.json file. When you execute the functions, it should just log just the array of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
+
+function getAnimals() {
+
+	$.ajax({
+		url: "data/animals.json"
+	}).done(function(animals){
+
+		console.log("the contents of animals.json");
+		console.log(animals);
+
+	});
+}
+
+getAnimals();
